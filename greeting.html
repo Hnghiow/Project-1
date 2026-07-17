@@ -29,6 +29,9 @@
       box-shadow: 0 30px 90px rgba(4,5,29,.55), inset 0 1px rgba(255,255,255,.2);
       backdrop-filter: blur(12px);
     }
+    nav { position: absolute; top: 1.5rem; right: 1.75rem; display: flex; gap: 1rem; }
+    nav a { color: #fffaf0; font-size: .9rem; font-weight: 700; text-decoration: none; }
+    nav a:hover, nav a:focus-visible { color: #ffd88c; text-decoration: underline; }
     .orbit { position: absolute; width: 620px; height: 230px; border: 1px solid rgba(255,218,153,.4); border-radius: 50%; transform: rotate(-20deg); z-index: -1; }
     .orbit::after { content: "✦"; position: absolute; top: -12px; left: 66%; color: #ffd88c; font-size: 1.7rem; }
     .content { animation: appear 1s cubic-bezier(.2,.8,.2,1) both; }
@@ -45,6 +48,10 @@
 <body>
   <div class="stars"></div><div class="glow"></div>
   <main class="poster">
+    <nav aria-label="Main navigation">
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
     <div class="orbit"></div><div class="sun"></div>
     <section class="content">
       <p class="eyebrow">A little brightness for your day</p>
